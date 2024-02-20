@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "Project01",
+		"path": "."
+	},
+	{
+		"name": "Font DM_Sans",
+		"path": "../Assets/Font DM_Sans"
+	}
+],
+  "settings": {}
+}
