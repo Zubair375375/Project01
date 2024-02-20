@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Last Memory</title>
+  </head>
+  <body>
+    <!-- header starts -->
+    <header>
+      <section class="flex justify-between bg-red-500 h-20">
+        <div class="flex justify-center">
+          <img
+            src="./Images/Last-logo_white.png"
+            alt="logo"
+            class="w-[400px]"
+          />
+        </div>
+
+        <div class="flex items-center mx-4 md:mx-10">
+          <nav
+            id="navbar"
+            class="hidden md:flex mx-10 text-lg font-medium text-white"
+          >
+            <ul class="flex">
+              <li class="px-4 flex items-center">HOME</li>
+              <li class="px-4 flex items-center">MEMORIAL</li>
+              <li class="px-4 flex items-center">SHOP</li>
+              <li class="px-4 flex items-center">CONTACT</li>
+            </ul>
+          </nav>
+          <button
+            class="md:block bg-black text-white px-12 py-2 text-lg font-medium rounded-3xl sm:block bg-black text-white px-10 mx-3 py-2 text-lg font-medium rounded-3xl hover:bg-white hover:text-red-500 transition duration-300"
+          >
+            Login
+          </button>
+          <button
+            id="hamburger"
+            class="md:hidden bg-white text-red-500 px-4 py-2 rounded focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- <script>
+        document
+          .getElementById("hamburger")
+          .addEventListener("click", function () {
+            var navbar = document.getElementById("navbar");
+            if (navbar.classList.contains("hidden")) {
+              navbar.classList.remove("hidden");
+            } else {
+              navbar.classList.add("hidden");
+            }
+          });
+      </script> -->
+
+      <section
+        class="flex flex-col-reverse md:flex-row items-center justify-between"
+      >
+        <div class="md:w-[50%] px-6 md:px-0">
+          <h1 class="text-5xl md:text-6xl font-semibold mb-5 ml-8 leading-none">
+            A Unique Way
+          </h1>
+          <h1
+            class="text-6xl md:text-7xl font-bold mb-12 text-black ml-8 leading-none"
+          >
+            To <span class="text-red-500">Remember</span>
+          </h1>
+          <p class="text-2xl md:text-3xl leading-relaxed mb-4 ml-8 w-[70%]">
+            The presence of loved ones in our lives leaves an indelible mark.
+          </p>
+          <p class="text-2xl md:text-3xl leading-relaxed mb-16 ml-8 w-[70%]">
+            Preserve it digitally for yourself and generations to come.
+          </p>
+          <div class="flex flex-col md:flex-row ml-8">
+            <button
+              class="bg-black text-white px-10 py-3 text-lg font-medium rounded-full mb-4 md:mr-4 hover:bg-white hover:text-red-500 transition duration-300"
+            >
+              Register
+            </button>
+            <button
+              class="bg-red-500 text-white px-10 py-3 text-lg font-medium rounded-full mb-4 md:mr-4 hover:bg-white hover:text-red-500 transition duration-300"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+
+        <div class="md:w-[50%]">
+          <img
+            src="./Images/Image destkop.jpg"
+            alt="Mobile Image"
+            class="w-full rounded-lg shadow-lg lg:w-[47rem]"
+          />
+        </div>
+      </section>
+    </header>
+    <!-- header ends -->
+
+    <!-- main starts -->
+    <main>
+      <section class="py-10 pb-[6rem]">
+        <h1 class="font-bold text-5xl w-[50%] mx-auto my-6 text-center">
+          What is <span class="text-red-500">Last Memory</span> ?
+        </h1>
+        <p class="text-2xl w-[50%] mx-auto my-6 text-center">
+          It is much more than just data about a person, it is our feelings and
+          desire to remember. Last Memory is a special place that is designed
+          for this purpose
+        </p>
+        <div class="flex w-[100%] justify-center flex-wrap">
+          <div
+            class="bg-red-500 w-[260px] h-[16rem] flex flex-col justify-center items-center rounded-[20%] mx-4 my-4 lg:relative top-[-4rem]"
+          >
+            <img
+              src="./Images/icons/biographie.png"
+              alt="biographite_Icon"
+              class="w-[50%]"
+            />
+            <h2 class="text-2xl font-bold text-white text-center">
+              Add a biography of your loves ones
+            </h2>
+          </div>
+          <div
+            class="bg-black text-white w-[260px] h-[16rem] flex flex-col justify-center items-center rounded-[20%] mx-4 my-4 lg:relative top-[4rem]"
+          >
+            <img
+              src="./Images/icons/famille (1).png"
+              alt="Family_Icon"
+              class="w-[50%]"
+            />
+            <h2 class="text-2xl font-bold text-white text-center w-[90%]">
+              Import photos, videos, voices
+            </h2>
+            <h2 class="text-2xl font-bold text-white text-center">
+              Share everything
+            </h2>
+          </div>
+          <div
+            class="bg-red-500 w-[260px] h-[16rem] flex flex-col justify-center items-center rounded-[20%] mx-4 my-4 lg:relative top-[-2rem]"
+          >
+            <img
+              src="./Images/icons/famille (1).png"
+              alt="Family_Icon"
+              class="w-[50%]"
+            />
+            <h2 class="text-2xl font-bold text-white text-center">
+              Send and Recieve
+            </h2>
+            <h2 class="text-2xl font-bold text-white text-center">
+              Tribute Messages
+            </h2>
+          </div>
+          <div
+            class="bg-black text-white w-[260px] h-[16rem] flex flex-col justify-center items-center rounded-[20%] mx-4 my-4 lg:relative top-[4rem]"
+          >
+            <img
+              src="./Images/icons/bloquer.png"
+              alt="Bloquer_Icon"
+              class="w-[50%]"
+            />
+            <h2 class="text-2xl font-bold text-white text-center">
+              Make the profile private or public
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-10 md:py-20">
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center px-6"
+        >
+          <div class="md:w-1/2 rounded-lg overflow-hidden">
+            <img
+              src="./Images/04-bild-mask_11 (1).png"
+              alt="Two Women Caring Image"
+              class="w-full"
+            />
+          </div>
+
+          <div
+            class="md:w-1/2 px-6 md:px-12 py-8 md:py-0 bg-white rounded-lg md:ml-6"
+          >
+            <h2
+              class="font-bold text-3xl md:text-5xl mb-6 text-center md:text-left"
+            >
+              Memory <span class="text-red-500">doesn't rust</span>
+            </h2>
+            <p class="text-lg md:text-xl mb-6">
+              Our heartfelt mission at Last Memory is to lovingly aid in
+              remembrance and preservation. We understand that the loss of a
+              cherished loved one is a deeply challenging journey.
+            </p>
+            <p class="text-lg md:text-xl mb-6">
+              Which is why our dedicated team has poured their hearts into
+              crafting an experience that honors their memory with tenderness
+              and care.
+            </p>
+            <p class="text-lg md:text-xl">
+              We sincerely hope that the act of creating a memory page can offer
+              a therapeutic embrace to those in need.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-10 md:py-20">
+        <div class="container mx-auto text-center">
+          <h2 class="font-bold text-3xl md:text-5xl mb-6 w-[90%] mx-auto">
+            Create your Last Memory profile and
+            <span class="text-red-500">share their legacy’s</span>
+          </h2>
+
+          <p class="text-lg md:text-xl mb-6 w-[90%] mx-auto">
+            Begin a voyage of recollection by crafting your Last Memory profile.
+            <span class="text-red-500">Become part of a community</span>
+            committed to safeguarding legacies and commemorating treasured
+            moments.
+          </p>
+
+          <p class="text-lg md:text-xl mb-6 w-[90%] mx-auto">
+            Your individual narrative holds significance, and we extend
+            <span class="text-red-500">an invitation for you</span> to shape
+            your digital legacy as its author.
+          </p>
+
+          <button
+            class="bg-red-500 text-white px-10 py-3 text-lg font-medium rounded-full mx-auto hover:bg-black hover:text-white transition duration-300"
+          >
+            Create my profile
+          </button>
+        </div>
+      </section>
+      <!-- <section>
+        <h2
+          class="font-bold text-3xl md:text-5xl mb-6 text-center w-[60%] mx-auto"
+        >
+          Create your Last Memory profile and
+          <span class="text-red-500">share their legacy’s</span>
+        </h2>
+        <p class="text-lg md:text-xl mb-6 w-[90%] mx-auto">
+          Begin a voyage of recollection by crafting your Last Memory profile.
+          <span class="text-red-500">Become part of a community</span> committed
+          to safeguarding legacies and commemorating treasured moments.
+        </p>
+        <p class="text-lg md:text-xl mb-6 w-[90%] mx-auto">
+          Your individual narrative holds significance, and we extend
+          <span class="text-red-500">an invitation for you</span> to shape your
+          digital legacy as its author.
+        </p>
+        <button
+          class="bg-red-500 text-white px-10 py-3 text-lg font-medium rounded-full mb-4 md:mr-4 mx-auto"
+        >
+          Create my profile
+        </button>
+      </section> -->
+      <!-- <section>
+
+        <div class="flex py-10 mx-auto pb-[6rem] bg-yellow-300 w-[100%]">
+          <div class="flex items-center bg-blue-300 w-[100%]">
+            <img
+              src="./Images/04-bild-mask_11 (1).png"
+              alt="Two Women Caring Image"
+              class="w-[100%] px-2"
+            />
+          </div>
+          <div class="px-4 bg-pink-300">
+            <h2 class="font-bold text-[2.7rem] mx-auto my-6 text-center">
+              Memory <span class="text-red-500">doesn't rust</span>
+            </h2>
+            <p class="text-2xl mx-auto my-6">
+              Our heartfelt mission at Last Memory is to lovingly aid in
+              remembrance and preservation. We understand that the loss of a
+              cherished loved one is a deeply challenging journey.
+            </p>
+            <p class="text-2xl mx-auto my-6">
+              Which is why our dedicated team has poured their hearts into
+              crafting an experience that honors their memory with tenderness
+              and care.
+            </p>
+            <p class="text-2xl mx-auto my-6 text-[1.5rem]">
+              We sincerely hope that the act of creating a memory page can offer
+              a therapeutic embrace to those in need.
+            </p>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <!-- main ends -->
+
+    <!-- footer starts -->
+    <footer></footer>
+    <!-- footer ends -->
+  </body>
+</html>
