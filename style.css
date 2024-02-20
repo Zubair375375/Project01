@@ -1,6 +1,10 @@
 @font-face {
-  font-family: "DM Sans";
-  src: url("") format("woff2"),
-    /* Modern Browsers */ url("path/to/font/font.woff") format("woff"); /* Legacy Browsers */
+  font-family: "DM";
+  src: url("DMSans-VariableFont_opsz\,wght.ttf") format("woff2"),
+    /* Modern Browsers */ url("DMSans-VariableFont_opsz\,wght.ttf")
+      format("woff"); /* Legacy Browsers */
   /* Optionally, you can define font-weight and font-style here */
+}
+body {
+  font-family: "DM";
 }
