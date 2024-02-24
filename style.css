@@ -81,3 +81,6 @@ body {
     margin-top: 0.8rem;
   }
 }
+.icon-hover:hover path {
+  fill: #ea5f53;
+}
