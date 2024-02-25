@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Profile | Last Memory</title>
+    <title>Create new profile</title>
   </head>
   <body>
     <section class="flex justify-between bg-[#EA5F53] h-20 px-4 md:px-8">
@@ -54,8 +54,8 @@
       <p class="mx-4 mb-2 md:mx-10 text-2xl liftThis">I LOVED MY WIFE</p>
       <nav class="thisOne">
         <ul class="flex justify-evenly list-none p-4 text-sm md:text-base">
-          <li class="py-4 font-medium text-red-500 itemsGap">My Favorites</li>
-          <li class="py-4 font-medium itemsGap">Memories</li>
+          <li class="py-4 font-medium itemsGap">My Favorites</li>
+          <li class="py-4 font-medium text-red-500 itemsGap">Memories</li>
           <li class="py-4 font-medium itemsGap">My account</li>
         </ul>
       </nav>
@@ -63,8 +63,29 @@
     <section
       class="px-2 py-8 md:px-2 text-base md:text-lg border-t-2 border-gray-500 w-[95%] mx-auto thisOneToo"
     >
-      <h5 class="font-medium">My Favorite Memories</h5>
+      <h5 class="font-medium">Profiles</h5>
 
+      <div class="flex justify-end">
+        <button
+          type="submit"
+          class="group bg-[#EA5F53] hover:bg-red-500 text-white font-light py-2 px-16 rounded-full flex items-center"
+        >
+          <svg
+            style="color: white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="h-4 w-4 mx-2"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+              fill="white"
+            ></path>
+          </svg>
+
+          Create a new profile
+        </button>
+      </div>
       <div class="mt-6 flex">
         <div
           class="max-w-sm w-full sm:w-[50%] md:w-[32.33%] bg-white py-2 shadow-2xl rounded-md overflow-hidden relative pt-8 my-6 mx-4"
@@ -99,12 +120,14 @@
             alt="Placeholder Image"
           />
           <div class="text-center px-4 py-2">
-            <h2 class="text-xl font-bold mt-4">
-              Gertrude Elizabeth "Gert" Derise
-            </h2>
-            <p class="text-lg text-gray-700 font-medium mt-2">Lifetime:</p>
-            <p class="text-sm text-gray-700 mt-2">
-              July 08, 1943 - Nov 28, 2013
+            <h2 class="text-xl font-bold mt-4">Mubashir Yasin</h2>
+            <p class="text-lg text-gray-700 font-medium mt-2">
+              Relationship: Brother
+            </p>
+            <p class="text-sm text-gray-700 mt-2">Created in 02/17/2024</p>
+            <p class="text-sm text-green-700 mt-2">
+              <span class="font-bold text-2xl mx-1">.</span>
+              LIMITED Memory
             </p>
           </div>
           <div class="flex justify-between px-4 py-2">
@@ -147,16 +170,16 @@
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-share-fill self-center mx-2"
+                class="bi bi-pencil-fill self-center mx-2"
                 viewBox="0 0 16 16"
               >
                 <path
-                  d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"
+                  d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"
                   fill="currentColor"
                   class="share-icon"
                 ></path>
               </svg>
-              <span>Share</span>
+              <span>Edit</span>
             </button>
           </div>
         </div>
