@@ -110,7 +110,91 @@ body {
 .sidebar.show {
   transform: translateX(0);
 }
+.drpShd {
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
 @media (max-width: 640px) {
+  .sidebar {
+    position: fixed;
+    top: 13%;
+    right: 2%;
+    width: 300px;
+    /* height: 100%; */
+    background-color: #fff;
+    z-index: 999;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    /* transform: translateY(8%); */
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  .outer {
+    width: 14rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    position: absolute;
+  }
+  .setSearchIcon {
+    position: absolute;
+    top: -0.8rem;
+    right: 1rem;
+  }
+  .inner {
+    width: 14rem;
+  }
+  .hdrRes {
+    height: 3rem;
+  }
+  .searchBox {
+    width: 10rem;
+    height: 1.8rem;
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 641px) and (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 13%;
+    right: 2%;
+    width: 300px;
+    /* height: 100%; */
+    background-color: #fff;
+    z-index: 999;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    /* transform: translateY(8%); */
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  .outer {
+    width: 14rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    position: absolute;
+  }
+  .setSearchIcon {
+    position: absolute;
+    top: -0.8rem;
+    right: 1rem;
+  }
+  .inner {
+    width: 14rem;
+  }
+  .hdrRes {
+    height: 4rem;
+  }
+  .searchBox {
+    width: 22rem;
+    height: 1.8rem;
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    overflow-x: hidden;
+  }
   .sidebar {
     position: fixed;
     top: 13%;
@@ -134,5 +218,26 @@ body {
   }
   .inner {
     width: 14rem;
+  }
+  .hdrRes {
+    height: 4rem;
+  }
+  .setSearchIcon {
+    position: absolute;
+    top: -0.8rem;
+    right: 1rem;
+  }
+  .setThis {
+    /* position: relative;
+    right: 5rem; */
+  }
+  .setThisToo {
+    /* position: relative;
+    right: 3rem; */
+  }
+  .searchBox {
+    width: 22rem;
+    height: 1.8rem;
+    margin-right: 2rem;
   }
 }
