@@ -228,12 +228,12 @@ body {
     right: 1rem;
   }
   .setThis {
-    /* position: relative;
-    right: 5rem; */
+    position: relative;
+    right: 5rem;
   }
   .setThisToo {
-    /* position: relative;
-    right: 3rem; */
+    position: relative;
+    right: 3rem;
   }
   .searchBox {
     width: 22rem;
