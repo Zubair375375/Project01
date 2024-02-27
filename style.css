@@ -151,7 +151,15 @@ body {
     height: 1.8rem;
     margin-right: 2rem;
   }
+  .modalRes {
+    width: 30rem;
+  }
 }
+/* @media (max-width: 420px) {
+  .modalRes {
+    width: 20rem;
+  }
+} */
 @media (min-width: 641px) and (max-width: 768px) {
   .sidebar {
     position: fixed;
@@ -189,6 +197,9 @@ body {
     width: 22rem;
     height: 1.8rem;
     margin-right: 2rem;
+  }
+  .modalRes {
+    width: 40rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {

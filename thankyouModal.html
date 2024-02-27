@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Profile | Last Memory</title>
+  </head>
+  <body>
+    <section class="flex justify-between bg-[#EA5F53] h-20 px-4 md:px-8">
+      <div class="flex items-center iconCenter">
+        <img
+          src="./Images/Last-logo_white.png"
+          alt="logo"
+          class="h-12 md:h-16 lg:w-auto"
+        />
+      </div>
+      <div
+        class="md:flex items-center bg-white w-16 self-center h-16 rounded-full justify-center"
+      >
+        <img
+          src="./Images/Screenshot 2024-02-23 104203.png"
+          alt="user icon"
+          class="self-center mx-auto my-auto w-full h-full md:w-16 md:h-16 rounded-full"
+        />
+      </div>
+    </section>
+
+    <section
+      class="px-2 py-8 md:px-2 text-base md:text-lg border-t-2 border-gray-500 w-[95%] mx-auto thisOneToo"
+    >
+      <div class="flex items-center">
+        <div>
+          <svg
+            style="color: rgb(33, 33, 33)"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+            class="w-4 h-4 md:w-6 md:h-6 mr-2"
+          >
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+              fill="#212121"
+            ></path>
+          </svg>
+        </div>
+        <h5 class="font-medium text-sm md:text-base">Create new profile</h5>
+      </div>
+      <h6 class="my-4 ml-6 mb-1">Personal Details</h6>
+      <div class="container mx-auto p-6">
+        <form id="contactForm" class="space-y-4" action="#" method="POST">
+          <div
+            class="flex flex-col justify-between border-t-[1px] border-gray-600 py-8 pb-2 sm:flex-row"
+          >
+            <div class="w-full sm:w-1/3 sm:pr-4 mb-4 sm:mb-0">
+              <label
+                for="firstName"
+                class="block font-medium text-gray-800 my-4"
+                >First Name:</label
+              >
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                required
+                class="w-full px-4 py-2 rounded-md border-gray-300 border-[1px] focus:border-indigo-500 focus:ring focus:ring-indigo-200"
+              />
+            </div>
+            <div class="w-full sm:w-1/3 sm:px-2 mb-4 sm:mb-0">
+              <label
+                for="middleName"
+                class="block font-medium text-gray-800 my-4"
+                >Middle Name:</label
+              >
+              <input
+                type="email"
+                id="middleName"
+                name="middleName"
+                required
+                class="w-full px-4 py-2 rounded-md border-gray-300 border-[1px] focus:border-indigo-500 focus:ring focus:ring-indigo-200"
+              />
+            </div>
+            <div class="w-full sm:w-1/3 sm:pl-4">
+              <label for="lastName" class="block font-medium text-gray-800 my-4"
+                >Last Name:</label
+              >
+              <input
+                type="email"
+                id="lastName"
+                name="lastName"
+                required
+                class="w-full px-4 py-2 rounded-md border-gray-300 border-[1px] focus:border-indigo-500 focus:ring focus:ring-indigo-200"
+              />
+            </div>
+          </div>
+
+          <div class="flex justify-end">
+            <button
+              type="submit"
+              class="group bg-[#EA5F53] hover:bg-white text-white hover:text-[#EA5F53] font-light py-2 px-16 rounded-full flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="h-4 w-4 mr-2 group-hover:text-[#EA5F53]"
+              >
+                <path
+                  d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              Save Changes
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <div
+      id="myModal"
+      class="modal hidden fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex justify-center items-center"
+    >
+      <div
+        class="modal-content bg-white w-full max-w-[50rem] md:max-h-[30rem] md:w-[40rem] lg:w-[50rem] p-6 rounded-lg text-center modalRes"
+      >
+        <span class="close absolute top-0 right-0 p-4 cursor-pointer"
+          >&times;</span
+        >
+        <img
+          src="./Images/Last-logo (1).png"
+          alt="last memory logo"
+          class="w-[13rem] h-[3rem] mx-auto"
+        />
+        <svg
+          style="color: rgb(99, 255, 56)"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          class="w-36 h-36 mx-auto my-1 md:pt-8"
+        >
+          <path
+            d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"
+            fill="#63ff38"
+          ></path>
+        </svg>
+        <h3 class="text-[3rem] text-[#333333] font-semibold my-3">Thank You</h3>
+        <p class="text-lg mt-3 text-[#333333]">
+          Your submission has been received.
+        </p>
+        <p class="text-lg text-[#333333]">We will be in touch with you soon.</p>
+        <button
+          id="backToSite"
+          class="bg-[#EA5F53] hover:bg-white text-white hover:text-[#EA5F53] font-bold py-2 px-4 rounded-full md:py-3 md:px-6 my-5"
+        >
+          Back to site
+        </button>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+        const modal = document.getElementById("myModal");
+        const closeBtn = document.querySelector(".close");
+        const backToSiteBtn = document.querySelector("#backToSite");
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          modal.classList.remove("hidden");
+
+          form.reset();
+        });
+
+        closeBtn.addEventListener("click", function () {
+          modal.classList.add("hidden");
+        });
+
+        backToSiteBtn.addEventListener("click", function () {
+          modal.classList.add("hidden");
+        });
+
+        window.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            modal.classList.add("hidden");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
