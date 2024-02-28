@@ -8,7 +8,6 @@
 body {
   font-family: "DM";
 }
-
 @media (max-width: 768px) {
   .upit {
     position: absolute;
@@ -44,6 +43,8 @@ body {
     top: 24rem;
     left: 1.2rem;
     font-size: 1.2rem;
+    overflow: hidden;
+    /* background-color: yellow; */
   }
   .thisOne {
     position: absolute;
@@ -113,6 +114,7 @@ body {
 .drpShd {
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
+
 @media (max-width: 640px) {
   .sidebar {
     position: fixed;
@@ -153,6 +155,20 @@ body {
   }
   .modalRes {
     width: 30rem;
+  }
+  .setTwoBtn {
+    position: absolute;
+    top: 26.2rem;
+    left: 2rem;
+  }
+  .thisOne {
+    top: 35rem;
+  }
+  .thisOneToo {
+    top: 40rem;
+  }
+  .liftThis {
+    overflow: hidden;
   }
 }
 /* @media (max-width: 420px) {
@@ -200,6 +216,17 @@ body {
   }
   .modalRes {
     width: 40rem;
+  }
+  .setTwoBtn {
+    position: absolute;
+    top: 26.2rem;
+    left: 2rem;
+  }
+  .thisOne {
+    top: 35rem;
+  }
+  .thisOneToo {
+    top: 40rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
