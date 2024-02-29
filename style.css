@@ -11,38 +11,38 @@ body {
 @media (max-width: 768px) {
   .upit {
     position: absolute;
-    left: 0.5rem;
-    top: 11rem;
-    width: 7rem;
-    height: 7rem;
+    left: 0.5rem !important;
+    top: 11rem !important;
+    width: 7rem !important;
+    height: 7rem !important;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .imgHai {
-    width: 6.3rem;
-    height: 6.3rem;
-    margin-bottom: 0.5rem;
+    width: 6.3rem !important;
+    height: 6.3rem !important;
+    margin-bottom: 0.5rem !important;
   }
   .upthis {
     position: absolute;
-    top: 21.5rem;
-    left: 1.2rem;
-    font-size: 2rem;
+    top: 21.5rem !important;
+    left: 1.2rem !important;
+    font-size: 2rem !important;
   }
   .upthistoo {
     position: absolute;
-    top: 24rem;
-    left: 1.2rem;
-    font-size: 1rem;
-    width: 23rem;
-    margin-bottom: 5rem;
+    top: 24rem !important;
+    left: 1.2rem !important;
+    font-size: 1rem !important;
+    width: 23rem !important;
+    margin-bottom: 5rem !important;
   }
   .liftThis {
     position: absolute;
-    top: 24rem;
-    left: 1.2rem;
-    font-size: 1.2rem;
+    top: 24rem !important;
+    left: 1.2rem !important;
+    font-size: 1.2rem !important;
     overflow: hidden;
     /* background-color: yellow; */
   }
@@ -55,7 +55,7 @@ body {
     /* background-color: red; */
   }
   .itemsGap {
-    margin: 0 1.2rem;
+    margin: 0 1.2rem !important;
   }
   .thisOneToo {
     position: absolute;
@@ -66,9 +66,9 @@ body {
     flex-direction: column;
     justify-content: center;
     justify-self: center;
-    padding: 0 1.3rem;
-    padding-top: 1rem;
-    margin-left: 0.9rem;
+    padding: 0 1.3rem !important;
+    padding-top: 1rem !important;
+    margin-left: 0.9rem !important;
   }
   .iconCenter {
     /* display: flex; */
@@ -139,8 +139,8 @@ body {
   }
   .setSearchIcon {
     position: absolute;
-    top: -0.8rem;
-    right: 1rem;
+    top: -0.8rem !important;
+    right: 1rem !important;
   }
   .inner {
     width: 14rem;
@@ -158,8 +158,8 @@ body {
   }
   .setTwoBtn {
     position: absolute;
-    top: 26.2rem;
-    left: 2rem;
+    top: 26.2rem !important;
+    left: 2rem !important;
   }
   .thisOne {
     top: 35rem;
@@ -200,8 +200,8 @@ body {
   }
   .setSearchIcon {
     position: absolute;
-    top: -0.8rem;
-    right: 1rem;
+    top: -0.8rem !important;
+    right: 1rem !important;
   }
   .inner {
     width: 14rem;
@@ -262,8 +262,8 @@ body {
   }
   .setSearchIcon {
     position: absolute;
-    top: -0.8rem;
-    right: 1rem;
+    top: -0.8rem !important;
+    right: 1rem !important;
   }
   .setThis {
     position: relative;
