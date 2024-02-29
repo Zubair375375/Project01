@@ -79,7 +79,7 @@ body {
   .thisImg {
     align-self: center;
     align-items: center;
-    margin-top: 0.8rem;
+    margin-top: 0.8rem !important;
   }
 }
 .icon-hover:hover path {
