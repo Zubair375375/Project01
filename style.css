@@ -11,8 +11,8 @@ body {
 @media (max-width: 768px) {
   .upit {
     position: absolute;
-    left: 0.5rem !important;
-    top: 11rem !important;
+    left: -0.7rem !important;
+    top: 7rem !important;
     width: 7rem !important;
     height: 7rem !important;
     display: flex;
@@ -26,29 +26,29 @@ body {
   }
   .upthis {
     position: absolute;
-    top: 21.5rem !important;
-    left: 1.2rem !important;
+    top: 17.5rem !important;
+    left: 0rem !important;
     font-size: 2rem !important;
   }
   .upthistoo {
     position: absolute;
-    top: 24rem !important;
-    left: 1.2rem !important;
+    top: 20rem !important;
+    left: 0rem !important;
     font-size: 1rem !important;
     width: 23rem !important;
     margin-bottom: 5rem !important;
   }
   .liftThis {
     position: absolute;
-    top: 24rem !important;
-    left: 1.2rem !important;
+    top: 20rem !important;
+    left: 0rem !important;
     font-size: 1.2rem !important;
     overflow: hidden;
     /* background-color: yellow; */
   }
   .thisOne {
     position: absolute;
-    top: 30rem;
+    top: 27rem !important;
     display: flex;
     justify-content: center;
     width: 99%;
@@ -59,7 +59,7 @@ body {
   }
   .thisOneToo {
     position: absolute;
-    top: 35rem;
+    top: 32rem !important;
     /* background-color: red; */
     /* width: 90%; */
     display: flex;
@@ -99,10 +99,12 @@ body {
   /* transform: translateY(8%); */
 }
 .outer {
+  /* width: 10rem; */
   position: absolute;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .inner {
+  /* width: 10rem; */
   /* position: absolute; */
   /* top: 0;
   left: 0;
@@ -113,6 +115,10 @@ body {
 }
 .drpShd {
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.drpShd:hover {
+  box-shadow: 8px 8px 8px rgba(255, 69, 69, 0.258),
+    0 1px 3px rgba(255, 90, 65, 0.291);
 }
 
 @media (max-width: 640px) {
@@ -158,14 +164,20 @@ body {
   }
   .setTwoBtn {
     position: absolute;
-    top: 26.2rem !important;
-    left: 2rem !important;
+    top: 22rem !important;
+    left: 1rem !important;
   }
   .thisOne {
-    top: 35rem;
+    top: 26rem !important;
   }
   .thisOneToo {
-    top: 40rem;
+    top: 30rem !important;
+  }
+  .onlyThisOne {
+    top: 30rem !important;
+  }
+  .onlyThisOneToo {
+    top: 34rem !important;
   }
   .liftThis {
     overflow: hidden;
@@ -219,14 +231,14 @@ body {
   }
   .setTwoBtn {
     position: absolute;
-    top: 26.2rem;
-    left: 2rem;
+    top: 22rem !important;
+    left: 1rem !important;
   }
   .thisOne {
-    top: 35rem;
+    top: 30rem !important;
   }
   .thisOneToo {
-    top: 40rem;
+    top: 34rem !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
