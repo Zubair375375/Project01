@@ -31,30 +31,135 @@
               <li class="px-4 flex items-center">CONTACT</li>
             </ul>
           </nav>
-          <button
-            class="md:block bg-black text-white px-12 py-2 text-lg font-medium rounded-3xl sm:block bg-black text-white px-10 mx-3 py-2 text-lg font-medium rounded-3xl hover:bg-white hover:text-[#EA5F53] transition duration-300"
-          >
-            Login
-          </button>
-          <button
-            id="hamburger"
-            class="md:hidden bg-white text-red-500 px-4 py-2 rounded focus:outline-none"
-          >
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
+
+          <!-- component -->
+          <div>
+            <!-- <nav
+              class="lg:hidden relative px-4 py-4 flex justify-between items-center bg-white"
+            > -->
+            <div class="lg:hidden">
+              <button
+                class="navbar-burger w-14 h-14 flex justify-center rounded-full items-center bg-black text-white p-3"
+              >
+                <svg
+                  class="block h-4 w-4 fill-current"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Mobile menu</title>
+                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="navbar-menu relative z-50 hidden">
+              <div
+                class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"
+              ></div>
+              <nav
+                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black border-r overflow-y-auto"
+              >
+                <div class="flex items-center mb-8 justify-between">
+                  <img
+                    src="./Images/Last-logo_white.png"
+                    alt="logo"
+                    class="w-56 h-22"
+                  />
+                  <button class="navbar-close">
+                    <svg
+                      class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <ul>
+                    <li class="mb-1">
+                      <a
+                        class="block p-4 text-sm font-semibold text-gray-400 hover:bg-white hover:text-[#EA5F53] rounded"
+                        href="#"
+                        >HOME</a
+                      >
+                    </li>
+                    <li class="mb-1">
+                      <a
+                        class="block p-4 text-sm font-semibold text-gray-400 hover:bg-white hover:text-[#EA5F53] rounded"
+                        href="#"
+                        >MEMORIAL</a
+                      >
+                    </li>
+                    <li class="mb-1">
+                      <a
+                        class="block p-4 text-sm font-semibold text-gray-400 hover:bg-white hover:text-[#EA5F53] rounded"
+                        href="#"
+                        >SHOP</a
+                      >
+                    </li>
+                    <li class="mb-1">
+                      <a
+                        class="block p-4 text-sm font-semibold text-gray-400 hover:bg-white hover:text-[#EA5F53] rounded"
+                        href="#"
+                        >CONTACT</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+          <script>
+            // Burger menus
+            document.addEventListener("DOMContentLoaded", function () {
+              // open
+              const burger = document.querySelectorAll(".navbar-burger");
+              const menu = document.querySelectorAll(".navbar-menu");
+
+              if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                  burger[i].addEventListener("click", function () {
+                    for (var j = 0; j < menu.length; j++) {
+                      menu[j].classList.toggle("hidden");
+                    }
+                  });
+                }
+              }
+
+              // close
+              const close = document.querySelectorAll(".navbar-close");
+              const backdrop = document.querySelectorAll(".navbar-backdrop");
+
+              if (close.length) {
+                for (var i = 0; i < close.length; i++) {
+                  close[i].addEventListener("click", function () {
+                    for (var j = 0; j < menu.length; j++) {
+                      menu[j].classList.toggle("hidden");
+                    }
+                  });
+                }
+              }
+
+              if (backdrop.length) {
+                for (var i = 0; i < backdrop.length; i++) {
+                  backdrop[i].addEventListener("click", function () {
+                    for (var j = 0; j < menu.length; j++) {
+                      menu[j].classList.toggle("hidden");
+                    }
+                  });
+                }
+              }
+            });
+          </script>
         </div>
       </section>
 
@@ -117,61 +222,65 @@
           for this purpose
         </p>
         <div class="flex w-[100%] justify-center flex-wrap">
-          <div
-            class="bg-[#EA5F53] w-[160px] md:w-[260px] h-[10rem] md:h-[16rem] flex flex-col justify-center items-center rounded-[20%] mx-4 my-4 lg:relative top-[-4rem]"
-          >
-            <img
-              src="./Images/icons/biographie.png"
-              alt="biographite_Icon"
-              class="w-[30%] mb-3 md:w-[50%]"
-            />
-            <h2 class="text-sm md:text-2xl font-bold text-white text-center">
-              Add a biography of your loves ones
-            </h2>
-          </div>
-          <div
-            class="bg-black text-white w-[160px] md:w-[260px] h-[10rem] md:h-[16rem] flex flex-col justify-center items-center rounded-[20%] mx-4 my-4 lg:relative top-[4rem]"
-          >
-            <img
-              src="./Images/icons/famille (1).png"
-              alt="Family_Icon"
-              class="w-[30%] mb-3 md:w-[50%]"
-            />
-            <h2
-              class="text-sm md:text-2xl font-bold text-white text-center w-[90%]"
+          <div class="flex">
+            <div
+              class="bg-[#EA5F53] w-[160px] md:w-[260px] h-[10rem] md:h-[16rem] flex flex-col justify-center items-center rounded-[20%] mx-4 my-4 lg:relative top-[-4rem]"
             >
-              Import photos, videos, voices
-            </h2>
-            <h2 class="text-sm md:text-2xl font-bold text-white text-center">
-              Share everything
-            </h2>
+              <img
+                src="./Images/icons/biographie.png"
+                alt="biographite_Icon"
+                class="w-[30%] mb-3 md:w-[50%]"
+              />
+              <h2 class="text-sm md:text-2xl font-bold text-white text-center">
+                Add a biography of your loves ones
+              </h2>
+            </div>
+            <div
+              class="bg-black text-white w-[160px] md:w-[260px] h-[10rem] md:h-[16rem] flex flex-col justify-center items-center rounded-[20%] mx-4 my-4 lg:relative top-[4rem]"
+            >
+              <img
+                src="./Images/icons/image (42).png"
+                alt="Family_Icon"
+                class="w-[30%] mb-3 md:w-[50%]"
+              />
+              <h2
+                class="text-sm md:text-2xl font-bold text-white text-center w-[90%]"
+              >
+                Import photos, videos, voices
+              </h2>
+              <h2 class="text-sm md:text-2xl font-bold text-white text-center">
+                Share everything
+              </h2>
+            </div>
           </div>
-          <div
-            class="bg-[#EA5F53] w-[160px] md:w-[260px] h-[10rem] md:h-[16rem] flex flex-col justify-center items-center rounded-[20%] mx-4 my-4 lg:relative top-[-2rem]"
-          >
-            <img
-              src="./Images/icons/famille (1).png"
-              alt="Family_Icon"
-              class="w-[30%] mb-3 md:w-[50%]"
-            />
-            <h2 class="text-sm md:text-2xl font-bold text-white text-center">
-              Send and Recieve
-            </h2>
-            <h2 class="text-sm md:text-2xl font-bold text-white text-center">
-              Tribute Messages
-            </h2>
-          </div>
-          <div
-            class="bg-black text-white w-[160px] md:w-[260px] h-[10rem] md:h-[16rem] flex flex-col justify-center items-center rounded-[20%] mx-4 my-4 lg:relative top-[4rem]"
-          >
-            <img
-              src="./Images/icons/bloquer.png"
-              alt="Bloquer_Icon"
-              class="w-[30%] mb-3 md:w-[50%]"
-            />
-            <h2 class="text-sm md:text-2xl font-bold text-white text-center">
-              Make the profile private or public
-            </h2>
+          <div class="flex flex-row-reverse md:flex-row">
+            <div
+              class="bg-[#EA5F53] w-[160px] md:w-[260px] h-[10rem] md:h-[16rem] flex flex-col justify-center items-center rounded-[20%] mx-4 my-4 lg:relative top-[-2rem]"
+            >
+              <img
+                src="./Images/icons/famille (1).png"
+                alt="Family_Icon"
+                class="w-[30%] mb-3 md:w-[50%]"
+              />
+              <h2 class="text-sm md:text-2xl font-bold text-white text-center">
+                Send and Recieve
+              </h2>
+              <h2 class="text-sm md:text-2xl font-bold text-white text-center">
+                Tribute Messages
+              </h2>
+            </div>
+            <div
+              class="bg-black text-white w-[160px] md:w-[260px] h-[10rem] md:h-[16rem] flex flex-col justify-center items-center rounded-[20%] mx-4 my-4 lg:relative top-[4rem]"
+            >
+              <img
+                src="./Images/icons/bloquer.png"
+                alt="Bloquer_Icon"
+                class="w-[30%] mb-3 md:w-[50%]"
+              />
+              <h2 class="text-sm md:text-2xl font-bold text-white text-center">
+                Make the profile private or public
+              </h2>
+            </div>
           </div>
         </div>
       </section>
@@ -246,17 +355,19 @@
 
     <!-- footer starts -->
     <footer class="bg-[#EA5F53] py-16">
-      <section class="flex justify-between px-6 text-white justify-evenly">
-        <div class="w-[25%]">
-          <h3 class="font-bold text-3xl md:text-4xl mb-6 w-[90%] mx-auto">
+      <section
+        class="flex justify-between px-6 text-white justify-evenly flex-col md:flex-row"
+      >
+        <div class="w-[80%] mb-16 md:w-[25%] md:mb-0 mx-auto">
+          <h3 class="font-bold text-4xl mb-6 w-[90%]">
             Hey, Let's stay in touch!
           </h3>
-          <p class="my-5 mx-4 opacity-70">
+          <p class="my-5 opacity-70">
             Promotions, new products and exclusive offers. Directly to your
             inbox.
           </p>
           <div
-            class="mx-4 py-4 px-4 w-[16.5rem] rounded-lg border-[0.1px] border-gray-200 bg-[#EA5F53] relative focus-within:border-white focus-within:outline-none flex"
+            class="py-4 px-4 w-[16.5rem] rounded-lg border-[0.1px] border-gray-200 bg-[#EA5F53] relative focus-within:border-white focus-within:outline-none flex"
           >
             <div>
               <input
@@ -270,7 +381,7 @@
               >
             </div>
             <div
-              class="bg-[#ffffff1a] text-white hover:bg-white hover:text-red-500 hover:opacity-100 font-bold py-2 px-2 rounded-full flex items-center relative right-[-1.5rem]"
+              class="bg-[#ffffff1a] text-white hover:bg-white hover:text-red-500 hover:opacity-100 font-bold py-2 px-2 rounded-full flex items-center relative right-[0rem]"
             >
               <button>
                 <svg
@@ -316,53 +427,58 @@
               }
             });
           </script>
-          <!-- <input
-            type="email"
-            placeholder="E-mail"
-            class="mx-4 py-4 px-4 w-[16.5rem] rounded-lg border-[0.1px] border-gray-200 bg-[#EA5F53] text-white focus:border-white focus:outline-none placeholder-white"
-          /> -->
         </div>
 
-        <div class="w-[25%] pl-12">
-          <h4 class="font-medium text-[1rem] md:text-[1rem] mb-6">Home</h4>
-          <ul>
-            <li class="my-5 opacity-70">Home</li>
-            <li class="my-5 opacity-70">Last Memory - Medallion</li>
-            <li class="my-5 opacity-70">Contact Us</li>
-            <li class="my-5 opacity-70">Track my order</li>
-          </ul>
-        </div>
+        <div class="flex justify-evenly text-sm md:text-lg">
+          <div class="w-[25%] pl-0 md:pl-12">
+            <h4 class="font-medium text-[1rem] md:text-[1rem] mb-6">Home</h4>
+            <ul>
+              <li class="my-5 opacity-70">Home</li>
+              <li class="my-5 opacity-70">Last Memory - Medallion</li>
+              <li class="my-5 opacity-70">Contact Us</li>
+              <li class="my-5 opacity-70">Track my order</li>
+            </ul>
+          </div>
 
-        <div class="w-[25%] pl-12">
-          <h4 class="font-medium text-[1rem] md:text-[1rem] mb-6">
-            Need help ?
-          </h4>
-          <ul>
-            <li class="my-5 opacity-70">Terms of Service</li>
-            <li class="my-5 opacity-70">Privacy Policy</li>
-            <li class="my-5 opacity-70">Refund & Return Policy</li>
-            <li class="my-5 opacity-70">Contact</li>
-            <li class="my-5 opacity-70">Shipping & Delivery</li>
-          </ul>
-        </div>
+          <div class="w-[25%] pl-0 md:pl-12">
+            <h4 class="font-medium text-[1rem] md:text-[1rem] mb-6">
+              Need help ?
+            </h4>
+            <ul>
+              <li class="my-5 opacity-70">Terms of Service</li>
+              <li class="my-5 opacity-70">Privacy Policy</li>
+              <li class="my-5 opacity-70">Refund & Return Policy</li>
+              <li class="my-5 opacity-70">Contact</li>
+              <li class="my-5 opacity-70">Shipping & Delivery</li>
+            </ul>
+          </div>
 
-        <div class="w-[25%]">
-          <h4 class="font-medium text-[1rem] md:text-[1rem] mb-6">
-            CONTACT US
-          </h4>
-          <ul>
-            <li class="my-5 opacity-70">
-              Our customer service team will be happy to answer your questions:
-              Monday - Friday: 9:00 - 17:00
-            </li>
-            <li class="my-5 opacity-70">E-mail us : Support@lastmemory.co</li>
-          </ul>
+          <div class="w-[25%]">
+            <h4 class="font-medium text-[1rem] md:text-[1rem] mb-6">
+              CONTACT US
+            </h4>
+            <ul>
+              <li class="my-5 opacity-70">
+                Our customer service team will be happy to answer your
+                questions: Monday - Friday: 9:00 - 17:00
+              </li>
+              <li
+                class="my-5 opacity-70 relative right-[1.5rem] md:right-[0rem]"
+              >
+                E-mail us : Support@lastmemory.co
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section class="flex justify-between px-6 text-white pt-16 pb-2">
-        <p>&#169; 2024, Last Memory. Powered by Shopify</p>
-        <div class="flex">
+      <section
+        class="flex justify-between px-6 text-white pt-16 pb-2 flex-col md:flex-row"
+      >
+        <p class="mb-6 text-center md:mb-0">
+          &#169; 2024, Last Memory. Powered by Shopify
+        </p>
+        <div class="flex justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             role="img"
