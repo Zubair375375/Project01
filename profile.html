@@ -8,72 +8,90 @@
     <title>Profile | Last Memory</title>
   </head>
   <body class="overflow-x-hidden">
-    <section class="flex justify-between bg-[#EA5F53] h-20 px-4 md:px-8">
+    <section
+      class="flex justify-between bg-[#EA5F53] h-16 sm:h-20 md:h-20 lg:h-22 px-4 md:px-8"
+    >
       <div class="flex items-center iconCenter">
         <img
           src="./Images/Last-logo_white.png"
           alt="logo"
-          class="h-12 md:h-16 lg:w-auto"
+          class="h-12 sm:h-14 md:h-16 lg:w-auto"
         />
       </div>
       <div
-        class="md:flex items-center bg-white w-16 self-center h-16 rounded-full justify-center"
+        class="md:flex items-center bg-white w-10 self-center h-10 rounded-full justify-center md:w-16 md:h-16 lg:w-16 lg:h-16"
       >
-        <img
+        <!-- <img
           src="./Images/icons/icons8-administrator-male-24.png"
           alt="user icon"
-          class="w-9 self-center mx-auto my-auto thisImg"
-        />
+          class="self-center mx-auto my-auto w-[3rem] h-[3rem] md:w-[4rem] md:h-[4rem] sm:h-[4rem] sm:w-[4rem] rounded-full"
+        /> -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          viewBox="0 -960 960 960"
+          width="24"
+          class="sm:w-10 sm:h-10 h-10 w-10 md:w-14 md:h-14 lg:w-12 lg:h-12"
+        >
+          <path
+            d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"
+            fill="#EA5F53"
+          />
+        </svg>
       </div>
     </section>
-    <section
-      class="relative bg-white h-[10rem] md:h-[16rem] bg-cover bg-center"
-      style="background-image: url('./Images/cover.jpg')"
-    >
-      <div
-        class="absolute top-48 left-0 ml-4 mb-4 md:mb-8 md:ml-8 bg-white w-24 h-24 md:w-36 md:h-36 rounded-full upit justify-center"
+    <section class="px-1 pt-1 md:px-0 md:pt-0 lg:px-0 lg:pt-0">
+      <section
+        class="relative bg-white h-[10rem] sm:h-[11rem] md:h-[16rem] bg-cover bg-center rounded-[0.3rem]"
+        style="background-image: url('./Images/darkNature.avif')"
       >
-        <img
-          src="./Images/Screenshot 2024-02-23 104203.png"
-          alt="Display Picture"
-          class="w-[8rem] h-[8rem] md:w-[8rem] md:h-[8rem] rounded-[100%] self-center imgHai mx-auto mt-2"
-        />
-      </div>
-      <h1
-        class="absolute text-xl md:text-[180%] font-bold text-black top-[17rem] left-16 mb-20 ml-4 md:ml-32 upthis"
+        <div
+          class="absolute top-48 left-0 ml-4 mb-4 md:mb-8 md:ml-8 bg-white w-24 h-24 md:w-36 md:h-36 rounded-full upit justify-center"
+        >
+          <img
+            src="./Images/beautifulCouple.png"
+            alt="Display Picture"
+            class="w-[8rem] h-[8rem] md:w-[8rem] md:h-[8rem] rounded-[100%] self-center imgHai mx-auto mt-2"
+          />
+        </div>
+        <h1
+          class="absolute text-xl sm:text-[150%] md:text-[180%] font-bold text-black top-[17rem] left-16 mb-20 ml-2 md:ml-32 upthis"
+        >
+          Antoine Dunker
+        </h1>
+        <p
+          class="absolute text-xl md:text-lg text-black top-[19rem] left-16 mb-20 ml-2 md:ml-32 upthistoo"
+        >
+          Lifetime : Oct 27th, 1940 - Feb 22nd, 2019
+        </p>
+      </section>
+      <section class="my-1 mt-28">
+        <p class="mx-4 mb-2 md:mx-10 text-2xl liftThis">I LOVED MY WIFE</p>
+        <nav class="thisOne">
+          <ul
+            class="flex justify-evenly list-none p-4 text-[0.8rem] md:text-base thisUL"
+          >
+            <li class="py-4 font-medium itemsGap">Biography</li>
+            <li class="py-4 font-medium text-red-500 itemsGap">Photos</li>
+            <li class="py-4 font-medium itemsGap">Videos</li>
+            <li class="py-4 font-medium itemsGap">Tribute</li>
+            <li class="py-4 font-medium itemsGap">Obituary</li>
+          </ul>
+        </nav>
+      </section>
+      <section
+        class="px-2 py-8 md:px-2 text-base md:text-lg border-t-2 border-gray-500 w-[95%] mx-auto thisOneToo"
       >
-        Antoine Dunker
-      </h1>
-      <p
-        class="absolute text-xl md:text-lg text-black top-[19rem] left-16 mb-20 ml-4 md:ml-32 upthistoo"
-      >
-        Lifetime : Oct 27th, 1940 - Feb 22nd, 2019
-      </p>
-    </section>
-    <section class="my-1 mt-28">
-      <p class="mx-4 mb-2 md:mx-10 text-2xl liftThis">I LOVED MY WIFE</p>
-      <nav class="thisOne">
-        <ul class="flex justify-evenly list-none p-4 text-sm md:text-base">
-          <li class="py-4 font-medium text-red-500 itemsGap">Biography</li>
-          <li class="py-4 font-medium itemsGap">Photos</li>
-          <li class="py-4 font-medium itemsGap">Videos</li>
-          <li class="py-4 font-medium itemsGap">Tributes</li>
-          <li class="py-4 font-medium itemsGap">Obituary</li>
-        </ul>
-      </nav>
-    </section>
-    <section
-      class="px-2 py-8 md:px-2 text-base md:text-lg border-t-2 border-gray-500 w-[95%] mx-auto thisOneToo"
-    >
-      <p>
-        Antoine Dunker, born on October 27th, 1940, lived a fulfilling life
-        until his passing on February 22nd, 2019.
-      </p>
-      <br />
-      <p>
-        A man whose laughter was as heartfelt as it was infectious, Antoine had
-        an innate ability to find joy in life's simplest moments.
-      </p>
+        <p class="mb-4 md:mb-0">
+          Antoine Dunker, born on October 27th, 1940, lived a fulfilling life
+          until his passing on February 22nd, 2019.
+        </p>
+        <br />
+        <p>
+          A man whose laughter was as heartfelt as it was infectious, Antoine
+          had an innate ability to find joy in life's simplest moments.
+        </p>
+      </section>
     </section>
   </body>
 </html>

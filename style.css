@@ -8,119 +8,23 @@
 body {
   font-family: "DM";
 }
-@media (max-width: 768px) {
-  .upit {
-    position: absolute;
-    left: -0.7rem !important;
-    top: 7rem !important;
-    width: 7rem !important;
-    height: 7rem !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .imgHai {
-    width: 6.3rem !important;
-    height: 6.3rem !important;
-    margin-bottom: 0.5rem !important;
-  }
-  .upthis {
-    position: absolute;
-    top: 17.5rem !important;
-    left: 0rem !important;
-    font-size: 2rem !important;
-  }
-  .upthistoo {
-    position: absolute;
-    top: 20rem !important;
-    left: 0rem !important;
-    font-size: 1rem !important;
-    width: 23rem !important;
-    margin-bottom: 5rem !important;
-  }
+@media (min-width: 1023px) {
   .liftThis {
-    position: absolute;
-    top: 20rem !important;
-    left: 0rem !important;
-    font-size: 1.2rem !important;
     overflow: hidden;
-    /* background-color: yellow; */
+    position: absolute;
+    top: 30.5rem !important;
+    left: 0rem !important;
   }
   .thisOne {
-    position: absolute;
-    top: 27rem !important;
-    display: flex;
-    justify-content: center;
-    width: 99%;
-    /* background-color: red; */
-  }
-  .itemsGap {
-    margin: 0 1.2rem !important;
+    position: relative;
+    top: 4rem;
   }
   .thisOneToo {
-    position: absolute;
-    top: 32rem !important;
+    position: relative;
+    top: 3rem !important;
     /* background-color: red; */
-    /* width: 90%; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-self: center;
-    padding: 0 1.3rem !important;
-    padding-top: 1rem !important;
-    margin-left: 0.9rem !important;
-  }
-  .iconCenter {
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-  .thisImg {
-    align-self: center;
-    align-items: center;
-    margin-top: 0.8rem !important;
   }
 }
-.icon-hover:hover path {
-  fill: #ea5f53;
-}
-
-.sidebar {
-  position: fixed;
-  top: 10%;
-  right: 1%;
-  width: 300px;
-  /* height: 100%; */
-  background-color: #fff;
-  z-index: 999;
-  overflow-y: auto;
-  transition: transform 0.3s ease;
-  /* transform: translateY(8%); */
-}
-.outer {
-  /* width: 10rem; */
-  position: absolute;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-}
-.inner {
-  /* width: 10rem; */
-  /* position: absolute; */
-  /* top: 0;
-  left: 0;
-  width: 100%; */
-}
-.sidebar.show {
-  transform: translateX(0);
-}
-.drpShd {
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-}
-.drpShd:hover {
-  box-shadow: 8px 8px 8px rgba(255, 69, 69, 0.258),
-    0 1px 3px rgba(255, 90, 65, 0.291);
-}
-
 @media (max-width: 640px) {
   .sidebar {
     position: fixed;
@@ -185,13 +89,135 @@ body {
   }
   .liftThis {
     overflow: hidden;
+    position: absolute;
+    top: 20rem !important;
+    left: 0rem !important;
+  }
+  /* .flexIssue {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  } */
+}
+
+@media (max-width: 768px) {
+  .upit {
+    position: absolute;
+    left: -0.9rem !important;
+    top: 7rem !important;
+    width: 7rem !important;
+    height: 7rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .thisUL {
+    width: 30rem;
+  }
+  .imgHai {
+    width: 6.3rem !important;
+    height: 6.3rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .upthis {
+    position: absolute;
+    top: 17.5rem !important;
+    left: 0rem !important;
+    font-size: 1.7rem !important;
+  }
+  .upthistoo {
+    position: absolute;
+    top: 20rem !important;
+    left: 0rem !important;
+    font-size: 1rem !important;
+    width: 23rem !important;
+    margin-bottom: 5rem !important;
+  }
+  .liftThis {
+    position: absolute;
+    top: 19rem !important;
+    left: -0.3rem !important;
+    font-size: 1.2rem !important;
+    overflow: hidden;
+    /* background-color: yellow; */
+  }
+  .thisOne {
+    position: absolute;
+    top: 28.5rem !important;
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    /* background-color: red; */
+  }
+  .itemsGap {
+    margin: 0rem 0.5rem !important;
+  }
+  .thisOneToo {
+    position: absolute;
+    top: 32rem !important;
+    /* background-color: red; */
+    /* width: 90%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    padding: 0 1.3rem !important;
+    padding-top: 1rem !important;
+    margin: 0 auto !important;
+  }
+  .iconCenter {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .thisImg {
+    align-self: center;
+    align-items: center;
+    margin-top: 0.8rem !important;
+  }
+  .onlyThis {
+    margin-left: 0rem !important;
   }
 }
-/* @media (max-width: 420px) {
-  .modalRes {
-    width: 20rem;
-  }
-} */
+.icon-hover:hover path {
+  fill: #ea5f53;
+}
+
+.sidebar {
+  position: fixed;
+  top: 10%;
+  right: 1%;
+  width: 300px;
+  /* height: 100%; */
+  background-color: #fff;
+  z-index: 999;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  /* transform: translateY(8%); */
+}
+.outer {
+  /* width: 10rem; */
+  position: absolute;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.inner {
+  /* width: 10rem; */
+  /* position: absolute; */
+  /* top: 0;
+  left: 0;
+  width: 100%; */
+}
+.sidebar.show {
+  transform: translateX(0);
+}
+.drpShd {
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.drpShd:hover {
+  /* box-shadow: 8px 8px 8px rgba(255, 69, 69, 0.258), */
+  /* 0 1px 3px rgba(255, 90, 65, 0.291); */
+}
+
 @media (min-width: 641px) and (max-width: 768px) {
   .sidebar {
     position: fixed;
@@ -244,6 +270,12 @@ body {
   .thisOneToo {
     top: 34rem !important;
   }
+  .liftThis {
+    overflow: hidden;
+    position: absolute;
+    top: 20rem !important;
+    left: 0rem !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   body {
@@ -294,4 +326,123 @@ body {
     height: 1.8rem;
     margin-right: 2rem;
   }
+  .liftThis {
+    overflow: hidden;
+    position: absolute;
+    top: 30.5rem !important;
+    left: 0rem !important;
+  }
+  .thisOne {
+    position: relative;
+    top: 4rem;
+  }
+  .thisOneToo {
+    position: relative;
+    top: 3rem !important;
+    /* background-color: red; */
+  }
+  .onlyThisOne {
+    top: 38rem !important;
+    /* background-color: red; */
+  }
+}
+@media (max-width: 378px) {
+  .thisUL {
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    /* background-color: yellow; */
+    padding: 0rem !important;
+    margin: 0rem 0rem !important;
+  }
+  .itemsGap {
+    width: 6rem;
+    text-align: center;
+  }
+  .upthistoo {
+    position: absolute;
+    top: 19.5rem !important;
+    left: 0rem !important;
+    font-size: 0.8rem !important;
+    width: 18rem !important;
+    margin-bottom: 5rem !important;
+  }
+  .setTwoBtn {
+    position: absolute;
+    top: 21.5rem !important;
+    left: 0.5rem !important;
+  }
+}
+@media (max-width: 300px) {
+  .thisUL {
+    display: flex;
+    justify-content: center;
+    width: 18rem;
+    /* background-color: yellow; */
+    padding: 0rem !important;
+    margin: 0rem 0rem !important;
+  }
+  .itemsGap {
+    width: 6rem;
+    text-align: center;
+  }
+  .upthistoo {
+    position: absolute;
+    top: 19.5rem !important;
+    left: 0rem !important;
+    font-size: 0.8rem !important;
+    width: 18rem !important;
+    margin-bottom: 5rem !important;
+  }
+}
+@media (max-width: 703px) {
+  .mu12 {
+    position: relative;
+    top: 3rem;
+  }
+  .mu22 {
+    position: relative;
+    top: 3rem;
+  }
+  .mu212 {
+    position: relative;
+    top: 3rem;
+  }
+  .mu222 {
+    position: relative;
+    top: 3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1247px) {
+  .mu12 {
+    position: relative;
+    top: 3rem;
+  }
+  .mu22 {
+    position: relative;
+    top: 3rem;
+  }
+  .mu212 {
+    position: relative;
+    top: 3rem;
+  }
+  .mu222 {
+    position: relative;
+    top: 3rem;
+  }
+  /* .makeSmall1 {
+    width: 14rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .makeSmall2 {
+    width: 13rem;
+    height: 22rem;
+  }
+  .makeSmall3 {
+    width: 13rem;
+    height: 20rem;
+  } */
 }
