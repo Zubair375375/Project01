@@ -177,11 +177,35 @@
     <main>
       <div class="bg-gray-100 text-center mt-3">
         <h1
-          class="text-4xl md:text-7xl font-bold mb-2 md:mb-12 text-gray-800 leading-none"
+          class="wipe-right-text text-4xl md:text-7xl font-bold mb-2 md:mb-12 text-gray-800 leading-none"
         >
           Discover amazing <span class="text-[#EA5F53]">stories</span>
         </h1>
+        <!-- <h1 class="wipe-right-text">Some Projects<span class="colr">.</span></h1> -->
       </div>
+      <script>
+        let a = 0;
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                observer.unobserve(entry.target);
+                a++;
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        const animatedTexts = document.querySelectorAll(".wipe-right-text");
+        animatedTexts.forEach((text) => {
+          observer.observe(text);
+          text.addEventListener("animationend", () => {
+            text.classList.add("show");
+          });
+        });
+      </script>
 
       <section class="flex flex-wrap justify-center">
         <section class="flex">

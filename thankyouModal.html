@@ -183,5 +183,177 @@
         });
       });
     </script>
+    
+
+    <div class="flex flex-wrap justify-center">
+      <div class="w-56 h-56">
+        <img
+          src="./Images/Beautiful-Girl-with-red-flowers-Image-for-WhatsApp-Dp.jpg"
+          alt="Image 1"
+          class="gallery-img"
+          onclick="openModal('./Images/Beautiful-Girl-with-red-flowers-Image-for-WhatsApp-Dp.jpg')"
+        />
+      </div>
+      <div class="w-56 h-56">
+        <img
+          src="./Images/Boy_Stylish__Dp_Image-2277.jpg"
+          alt="Image 2"
+          class="gallery-img"
+          onclick="openModal('./Images/Boy_Stylish__Dp_Image-2277.jpg')"
+        />
+      </div>
+      <div class="w-56 h-56">
+        <img
+          src="./Images/cadol.png"
+          alt="Image 3"
+          class="gallery-img"
+          onclick="openModal('./Images/cadol.png')"
+        />
+      </div>
+    </div>
+
+    <div
+      id="modal"
+      class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-90 z-50 hidden"
+    >
+      <div
+        class="modal-content relative md:w-[70rem] md:h-[50rem]  flex justify-center items-center "
+      >
+        <img
+          src=""
+          alt="Modal Image"
+          id="modal-img"
+          class="modal-img w-[60%] h-[80%] my-auto"
+        />
+        <div class="bg-white w-[40%] h-[80%]   pt-4 pl-4">
+          <div class="flex flex-col md:flex-row items-center mb-8 md:mb-4">
+            <img
+              src="./Images/Boy_Stylish__Dp_Image-2277.jpg"
+              alt="user display picture"
+              class="w-[4rem] h-[4rem] rounded-full mb-4 md:mb-0 md:mr-6"
+            />
+            <h2 class="font-bold text-[1.3rem] mb-2 text-gray-800">
+              Muhammad Zubair
+            </h2>
+          </div>
+          <div class="mx-auto py-2 mt-2 rounded-md">
+            <div class="mb-4">
+              <h6 for="title" class="block text-gray-700 font-medium mb-2">
+                Title here
+              </h6>
+            </div>
+            <div class="mb-4">
+              <h6 for="title" class="block text-gray-700 font-medium mb-2">
+                Description here
+              </h6>
+            </div>
+            <div
+              class="border-b-2 border-t-2 border-gray-200 px-4 py-4 shadow-md w-[90%]"
+            >
+              
+              <ul class="flex text-sm">
+                <li class="mx-2 flex items-center text-[#EA5F53]">
+                  <a class="flex" href="#"
+                    ><svg
+                      style="color: #ea5f53"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 text-red-500 mr-1"
+                      viewBox="0 0 512 512"
+                    >
+                      <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"
+                        fill="#EA5F53"
+                      ></path></svg
+                    >liked (0)</a
+                  >
+                </li>
+                <li class="mx-2 flex items-center">
+                  <a class="flex" href="#"
+                    ><svg
+                      style="color: rgb(61, 61, 61)"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      class="h-4 w-4 mr-1"
+                    >
+                      <path
+                        class="uim-primary"
+                        d="M15,11H13V9a1,1,0,0,0-2,0v2H9a1,1,0,0,0,0,2h2v2a1,1,0,0,0,2,0V13h2a1,1,0,0,0,0-2Z"
+                        fill="rgb(97, 97, 97)"
+                      ></path>
+                      <path
+                        class="uim-tertiary"
+                        d="M12,2A10.00082,10.00082,0,0,0,4.25684,18.3291L2.293,20.293A.99991.99991,0,0,0,3,22h9A10,10,0,0,0,12,2Zm3,11H13v2a1,1,0,0,1-2,0V13H9a1,1,0,0,1,0-2h2V9a1,1,0,0,1,2,0v2h2a1,1,0,0,1,0,2Z"
+                        fill="rgb(97, 97, 97)"
+                      ></path>
+                    </svg>
+                    Comments (0)</a
+                  >
+                </li>
+                <li class="mx-2"><a class="flex" href="#">Edit</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="my-4 flex items-center border-b-2 border-gray-200 pb-2 md:pb-4  w-[90%]">
+                <img
+                  src="./Images/cadol.png"
+                  alt="userprofile"
+                  class="w-10 h-10 rounded-full"
+                />
+                <div class="ml-2">
+                  <h6 class="font-bold text-sm">Mubasher khan<span class="font-light text-[0.7rem]">
+                    5/5/2024</span</h6>
+                  <p class="text-sm">What a picture lah</p>
+                </div>
+              </div>
+              <div class="my-4 flex items-center  border-b-2 border-gray-200 pb-2 md:pb-4 w-[90%]">
+                <img
+                  src="./Images/dp.png"
+                  alt="userprofile"
+                  class="w-10 h-10 rounded-full"
+                />
+                <div class="ml-2">
+                  <h6 class="font-bold text-sm">
+                    Kohati kurhi
+                    <span class="font-light text-[0.7rem]">
+                      5/5/2024</span
+                    >
+                  </h6>
+                  <p class="text-sm">WoW! I like it</p>
+                </div>
+              </div>
+            </div>
+            <textarea
+              class="mt-4 pt-2 pl-4 border-gray-200 border-2 w-[90%]"
+              name="commentSection"
+              id="1122"
+              cols="30"
+              rows="3"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <span
+        class="close absolute top-0 right-0 mr-4 mt-4 text-white cursor-pointer text-4xl"
+        onclick="closeModal()"
+        >&times;</span
+      >
+    </div>
+    <script>
+      function openModal(imageSrc) {
+        var modal = document.getElementById("modal");
+        var modalImg = document.getElementById("modal-img");
+        modal.style.display = "flex";
+        modalImg.src = imageSrc;
+      }
+      
+      function closeModal() {
+        var modal = document.getElementById("modal");
+        modal.style.display = "none";
+      }
+      
+      
+    </script>
   </body>
 </html>

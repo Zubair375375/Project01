@@ -8,7 +8,37 @@
 body {
   font-family: "DM";
 }
+
 @media (min-width: 1023px) {
+  .wipe-right-text {
+    font-size: 5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    opacity: 0;
+    margin-bottom: 10px;
+  }
+
+  .animate {
+    animation: wipeRight 3s ease-in-out;
+  }
+
+  .wipe-right-text.show {
+    width: 90%;
+    opacity: 1;
+  }
+
+  @keyframes wipeRight {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    90% {
+      width: 90%;
+      opacity: 1;
+    }
+  }
+
   .liftThis {
     overflow: hidden;
     position: absolute;
@@ -281,6 +311,7 @@ body {
   body {
     overflow-x: hidden;
   }
+
   .sidebar {
     position: fixed;
     top: 13%;
@@ -341,9 +372,8 @@ body {
     top: 3rem !important;
     /* background-color: red; */
   }
-  .onlyThisOne {
-    top: 38rem !important;
-    /* background-color: red; */
+  .setSizing {
+    width: 95%;
   }
 }
 @media (max-width: 378px) {
