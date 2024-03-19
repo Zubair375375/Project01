@@ -8,7 +8,97 @@
 body {
   font-family: "DM";
 }
-
+@media (min-width: 525px) and (max-width: 768px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+  .fitMedia {
+    width: 12rem !important;
+  }
+  .fitinMedia {
+    width: 12rem !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1080px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+  .fitMedia {
+    width: 13rem !important;
+  }
+  .fitinMedia {
+    width: 13rem !important;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1366px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+  .fitMedia {
+    width: 14rem !important;
+  }
+  .fitinMedia {
+    width: 14rem !important;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1440px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+  .fitMedia {
+    width: 14rem !important;
+  }
+  .fitinMedia {
+    width: 14rem !important;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1600px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+  .fitMedia {
+    width: 14rem !important;
+  }
+  .fitinMedia {
+    width: 14rem !important;
+  }
+}
+@media (min-width: 1601px) and (max-width: 1920px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+  .fitMedia {
+    width: 21rem !important;
+  }
+  .fitinMedia {
+    width: 21rem !important;
+  }
+}
+@media (min-width: 1921px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+  .fitMedia {
+    width: 23rem !important;
+  }
+  .fitinMedia {
+    width: 23rem !important;
+  }
+}
 @media (min-width: 1023px) {
   .wipe-right-text {
     font-size: 5rem;
