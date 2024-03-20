@@ -8,11 +8,125 @@
 body {
   font-family: "DM";
 }
-@media (min-width: 525px) and (max-width: 768px) {
+@media (max-width: 329px) {
   .flexIt {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
+    justify-content: left !important;
+  }
+  .fitMedia {
+    width: 8.5rem !important;
+  }
+  .fitinMedia {
+    width: 8.5rem !important;
+  }
+}
+@media (min-width: 330px) and (max-width: 361px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+  }
+  .fitMedia {
+    width: 9rem !important;
+  }
+  .fitinMedia {
+    width: 9rem !important;
+  }
+}
+@media (min-width: 362px) and (max-width: 425px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+  }
+  .fitMedia {
+    width: 10rem !important;
+  }
+  .fitinMedia {
+    width: 10rem !important;
+  }
+}
+@media (min-width: 426px) and (max-width: 446px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+  }
+  .fitMedia {
+    width: 12rem !important;
+  }
+  .fitinMedia {
+    width: 12rem !important;
+  }
+}
+@media (min-width: 447px) and (max-width: 489px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+  }
+  .fitMedia {
+    width: 12rem !important;
+  }
+  .fitinMedia {
+    width: 12rem !important;
+  }
+}
+@media (min-width: 490px) and (max-width: 524px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+  }
+  .fitMedia {
+    width: 14rem !important;
+  }
+  .fitinMedia {
+    width: 14rem !important;
+  }
+}
+@media (min-width: 525px) and (max-width: 569px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+  }
+  .fitMedia {
+    width: 15rem !important;
+  }
+  .fitinMedia {
+    width: 15rem !important;
+  }
+}
+@media (min-width: 570px) and (max-width: 617px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
+  }
+  .fitMedia {
+    width: 11rem !important;
+  }
+  .fitinMedia {
+    width: 11rem !important;
+  }
+}
+
+@media (min-width: 618px) and (max-width: 768px) {
+  .flexIt {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: left !important;
   }
   .fitMedia {
     width: 12rem !important;
@@ -26,6 +140,7 @@ body {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
+    justify-content: left !important;
   }
   .fitMedia {
     width: 13rem !important;
